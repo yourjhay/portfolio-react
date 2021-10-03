@@ -41,8 +41,6 @@ body {
 .terminal-outer-container {
     width: 100%;
     max-width: 3000px;
-    padding: 40px;
-
     position: absolute;
 }
 

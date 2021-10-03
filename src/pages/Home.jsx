@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <div className="root-page-container bg-gray-700">
         <div className="backdrop-upper-half"/>
-        <div className="terminal-outer-container">
+        <div className="terminal-outer-container p-5 md:p-20">
           <div className="terminal-inner-container">
             <div className="terminal-title-bar">
               <div className="terminal-title-actions">
@@ -22,7 +22,7 @@ const Home = () => {
               <div className="terminal-content-text">
                 <p>$ <strong>cat</strong> <span className="yellow">~</span><span
                   className="blue">/info/about.md</span></p>
-                <p className="blue text-2xl font-semibold my-5">Rey Jhon Abarracoso Baquirin</p>
+                <p className="blue text-2xl md:text-4xl font-semibold my-5">Rey Jhon Abarracoso Baquirin</p>
                 <span className="yellow">Web Application Developer</span>
                 <p className="mt-3 mb-2">@skills:</p>
                 <p className="blue flex items-center"> {chevronRight} React.js</p>
