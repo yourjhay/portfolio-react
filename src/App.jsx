@@ -1,12 +1,21 @@
+import React, { lazy, Suspense } from "react";
 import "./resources/css/index.css";
-import Home from './pages/Home';
+const Home = lazy(() => import("./pages/Home"));
 
-function App() {
+const Loading = () => (
+  <div className="text-gray-400 flex flex-col text-center items-center justify-center">
+    <div className="my-auto h-32 mt-52">LOADING</div>
+  </div>
+);
+
+const App = () => {
   return (
     <div>
-      <Home/>
+      <Suspense fallback={<Loading />}>
+        <Home />
+      </Suspense>
     </div>
   );
-}
+};
 
 export default App;
