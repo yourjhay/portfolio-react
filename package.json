@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "vite preview --port=8081"
+    "start": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-legacy": "^1.6.2",
