@@ -1,5 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import "./resources/css/index.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Shares from "./pages/Shares";
+import About from "./pages/About";
 const Home = lazy(() => import("./pages/Home"));
 
 const Loading = () => (
@@ -10,11 +13,20 @@ const Loading = () => (
 
 const App = () => {
   return (
-    <div>
-      <Suspense fallback={<Loading />}>
-        <Home />
-      </Suspense>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route path="shares" element={<Shares />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+    </Router>
   );
 };
 
