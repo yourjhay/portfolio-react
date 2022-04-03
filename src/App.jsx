@@ -3,6 +3,7 @@ import "./resources/css/index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Shares from "./pages/Shares";
 import About from "./pages/About";
+import PageNotFound from "./pages/PageNotFound";
 const Home = lazy(() => import("./pages/Home"));
 
 const Loading = () => (
@@ -25,6 +26,8 @@ const App = () => {
         />
         <Route path="shares" element={<Shares />} />
         <Route path="about" element={<About />} />
+        <Route path="*" element={<PageNotFound/>} />
+
       </Routes>
     </Router>
   );
