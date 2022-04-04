@@ -10,8 +10,10 @@
   "dependencies": {
     "@vitejs/plugin-legacy": "^1.6.2",
     "ansi-to-react": "^6.1.6",
+    "axios": "^0.26.1",
     "cross-env": "^7.0.3",
     "express": "^4.17.3",
+    "js-cookie": "^3.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^6.3.0"

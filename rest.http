@@ -1,0 +1,33 @@
+@host=https://api.rjhon.net
+@apiKey=ZM6sexRlKw6Unqa5SjU1F36ykmJtEkD55IKBCtDK
+
+GET {{host}}/health
+Accept: application/json
+Content-Type: application/json
+x-api-key: {{apiKey}}
+
+
+### login
+POST {{host}}/login
+Accept: application/json
+Content-Type: application/json
+x-api-key: {{apiKey}}
+
+{
+    "username":"rj",
+    "password":"Passmein07!"
+}
+
+
+### login
+POST {{host}}/verify
+Accept: application/json
+Content-Type: application/json
+x-api-key: {{apiKey}}
+
+{
+    "user": {
+        "username":"rj"
+    },
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJqIiwibmFtZSI6IlJleSBKaG9uIEJhcXVpcmluIiwiZW1haWwiOiJyamhheWJhcXVpcmluQGdtYWlsLmNvbSIsImlhdCI6MTY0OTA1NzgwMywiZXhwIjoxNjQ5MDYxNDAzfQ.zCHDM74eKzTrzqzFpQb6Adoxvj1MSxwCFooUE2P0TkI"
+}

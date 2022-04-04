@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useContext } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const Command = ({ children }) => {
+  const location = useLocation();
+  const auth = useContext(AuthContext);
   const navigate = useNavigate();
   const [command, setCommand] = React.useState("");
   const [error, setError] = React.useState("");
@@ -14,7 +17,7 @@ const Command = ({ children }) => {
     };
   }, []);
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = async (e) => {
     if (e.key === "Enter") {
       if (
         command.includes("cd /home") ||
@@ -54,6 +57,22 @@ const Command = ({ children }) => {
           window.open("https://github.com/yourjhay", "_blank");
         }, 2000);
         setFeedback("opening github profile in new tab.");
+      } else if (command.includes("login")) {
+        let cmd = command.trim();
+        const args = cmd.split(" ");
+        if (args.length !== 3) {
+          setError("invalid login options.");
+        }
+        let username = args[1];
+        let password = args[2];
+        let from = location.state?.from?.pathname || "/";
+        setError("Please wait singing in...");
+        await auth.signin({ username, password }, () => {
+          console.log("navigating", from);
+          setError("");
+          navigate(from, { replace: true });
+        });
+        setError("");
       } else {
         setError("Command not found.");
       }
