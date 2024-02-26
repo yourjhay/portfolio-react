@@ -1,8 +1,11 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import TerminalContainer from "../components/TerminalContainer";
 import Command from "../components/Command";
+
 const Home = () => {
+
+
   return (
     <TerminalContainer title={"Home"}>
       <Command>
@@ -19,8 +22,8 @@ const Home = () => {
       </div>
       <div className="mt-3">
         <p className="text-gray-500">Show Profile Information:</p>
-        <p className="text-blue-400">cat ~/info/about.md</p>
-        <p className="text-blue-400">about</p>
+        <p className="text-blue-400"><Link className="visited:text-blue-400" to={"/about"} >cat ~/info/about.md</Link></p>
+        <p className="text-blue-400"><Link className="visited:text-blue-400" to={"/about"} >about</Link></p>
         <p className="mt-3 text-gray-500">To go to my LinkedIn profile:</p>
         <p className="text-blue-400">linkedin</p>
         <p className="mt-3 text-gray-500">To go to my Github profile:</p>

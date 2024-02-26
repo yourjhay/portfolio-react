@@ -40,7 +40,7 @@ const Command = ({ children }) => {
       ) {
         timer = setTimeout(() => {
           window.open(
-            "https://www.linkedin.com/in/rey-jhon-baquirin-810402182",
+            "https://www.linkedin.com/in/rj-baquirin-810402182/",
             "_blank"
           );
         }, 2000);

@@ -129,7 +129,7 @@ a {
     color:#1a720c;
 }
 a:visited {
-    color: #336dea;
+    color: #d790f5;
 }
 
 .terminal-content-text h1 {
@@ -216,6 +216,3 @@ strong {
     color: #1a720c;
 }
 
-a:visited {
-    @apply text-gray-500
-}
