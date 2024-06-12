@@ -43,7 +43,7 @@ const About = () => {
           <p className="text-green-500 flex items-center">{chevronRight} Docker</p>
           <p className="mt-5 mb-2">@contact:</p>
           <p className="text-blue-300 flex items-center">
-            <span className="mr-2">{inbox}</span> message@rjhon.net
+            <span className="mr-2">{inbox}</span> inquire@rjhon.net
           </p>
           <p className="text-blue-300 flex items-center">
             <span className="mr-2">{inbox}</span> reyjhonbaquirin@yahoo.com
@@ -51,6 +51,7 @@ const About = () => {
           <div className="mt-5 flex gap-4 items-center">
             <div className={"text-gray-500 w-8 h-8"}>
               <a
+                style={{color:'#d790f5'}}
                 href={"https://github.com/yourjhay"}
                 rel={"noreferrer"}
                 target={"_blank"}
@@ -60,6 +61,7 @@ const About = () => {
             </div>
             <div className={"text-gray-500 w-8 h-8"}>
               <a
+                style={{color:'#d790f5'}}
                 href={"https://www.linkedin.com/in/rj-baquirin-810402182/"}
                 rel={"noreferrer"}
                 target={"_blank"}

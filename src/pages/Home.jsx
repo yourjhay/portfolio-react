@@ -16,16 +16,16 @@ const Home = () => {
       </Command>
       <div className="mt-3">
         <p>
-          Hello! Welcome to my site. Interested about me? Please check available
+          Hello! Welcome to my site. Interested about me? Please check or click available
           commands below to show my information.
         </p>
       </div>
       <div className="mt-3">
         <p className="text-gray-500">Show Profile Information:</p>
-        <p className="text-blue-400"><Link className="visited:text-blue-400" to={"/about"} >cat ~/info/about.md</Link></p>
-        <p className="text-blue-400"><Link className="visited:text-blue-400" to={"/about"} >about</Link></p>
-        <p className="mt-3 text-gray-500">To go to my LinkedIn profile:</p>
-        <p className="text-blue-400">linkedin</p>
+        <p className="text-blue-400"><Link style={{color:'#d790f5'}} to={"/about"} >cat ~/info/about.md</Link></p>
+        <p className="text-blue-400"><Link style={{color:'#d790f5'}} to={"/about"} >about</Link></p>
+        <p className="mt-3 text-gray-500">To go to my LinkedIn profile: (Where I feature some of my projects)</p>
+        <p className="text-blue-400"><Link style={{color:'#d790f5'}} rel="noreferrer" to={"/about"} >linkedin</Link></p>
         <p className="mt-3 text-gray-500">To go to my Github profile:</p>
         <p className="text-blue-400">github</p>
         <p className="mt-5 text-gray-500">

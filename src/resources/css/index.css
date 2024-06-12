@@ -156,13 +156,10 @@ a:visited {
 .mode-indicator-triangle {
     width: 0;
     height: 0;
-    border-top: 15.5px solid transparent;
-    border-bottom: 15.5px solid transparent;
-
-    border-left: 15.5px solid rgba(198, 141, 255, 1);
+    border-top: 17.5px solid transparent;
+    border-bottom: 17.5px solid transparent;
+    border-left: 17.5px solid rgba(198, 141, 255, 1);
     background: var(--modeline-backdrop-color);
-
-    margin-left: -6px;
 }
 
 .terminal-file-display {

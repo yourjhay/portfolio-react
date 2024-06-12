@@ -18,6 +18,7 @@ const Command = ({ children }) => {
     if (e.key === "Enter") {
       if (
         command.includes("cd /home") ||
+        command.includes("home") ||
         command.includes("command --available") ||
         command.includes("--help") ||
         command.includes("cd ~")
