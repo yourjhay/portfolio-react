@@ -1,21 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 import App from './App'
-import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
-let root = document.getElementById('root');
-if(root) {
-    // 1. Set up the browser history with the updated location
-    // (minus the # sign)
-    const path = (/#!(\/.*)$/.exec(location.hash) || [])[1];
-    if (path) {
-      history.replace(path);
-    }
-  
-  ReactDOM.render(
-    <React.StrictMode>
+
+const root = document.getElementById('root')
+
+if (root) {
+  // Handle hash-based routing redirect (for GitHub Pages compatibility)
+  const path = (/#!(\/.*)$/.exec(location.hash) || [])[1]
+  if (path) {
+    history.replaceState(null, '', path)
+  }
+
+  createRoot(root).render(
+    <StrictMode>
       <App />
-    </React.StrictMode>,
-    document.getElementById('root')
+    </StrictMode>
   )
 }

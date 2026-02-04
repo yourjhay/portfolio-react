@@ -24,8 +24,8 @@ const Home = () => {
         <p className="text-gray-500">Show Profile Information:</p>
         <p className="text-blue-400"><Link style={{color:'#d790f5'}} to={"/about"} >cat ~/info/about.md</Link></p>
         <p className="text-blue-400"><Link style={{color:'#d790f5'}} to={"/about"} >about</Link></p>
-        <p className="mt-3 text-gray-500">To go to my LinkedIn profile: (Where I feature some of my projects)</p>
-        <p className="text-blue-400"><Link style={{color:'#d790f5'}} rel="noreferrer" to={"/about"} >linkedin</Link></p>
+        {/* <p className="mt-3 text-gray-500">To go to my LinkedIn profile: (Where I feature some of my projects)</p>
+        <p className="text-blue-400"><Link style={{color:'#d790f5'}} rel="noreferrer" to={"/about"} >linkedin</Link></p> */}
         <p className="mt-3 text-gray-500">To go to my Github profile:</p>
         <p className="text-blue-400">github</p>
         <p className="mt-5 text-gray-500">

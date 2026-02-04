@@ -19,13 +19,13 @@ const About = () => {
             <span className="blue">/info/about.md</span>
           </Command>
           <p className="blue text-2xl md:text-4xl font-semibold my-5">
-            RJ Baquirin
+            RJ
           </p>
-          <span className="yellow">Full Stack Developer</span>
+          <span className="yellow">Software Architect</span>
           <p className="mt-3 mb-2">@skills:</p>
           <p className="blue flex items-center"> {chevronRight} React.js</p>
           <p className="text-blue-500 flex items-center">
-            {chevronRight} React Native - iOS & Android
+            {chevronRight} iOS & Android Development
           </p>
           <p className="text-red-500 flex items-center">
             {chevronRight} Laravel
@@ -37,16 +37,16 @@ const About = () => {
           <p className="text-blue-400 flex items-center">
             {chevronRight} Php OOP
           </p>
-          <p className="yellow flex items-center">
+          <p className="text-green-300 flex items-center">
             {chevronRight} JavaScript / Typescript
+          </p>
+          <p className="yellow flex items-center">
+            {chevronRight} API Design & Development
           </p>
           <p className="text-green-500 flex items-center">{chevronRight} Docker</p>
           <p className="mt-5 mb-2">@contact:</p>
           <p className="text-blue-300 flex items-center">
             <span className="mr-2">{inbox}</span> inquire@rjhon.net
-          </p>
-          <p className="text-blue-300 flex items-center">
-            <span className="mr-2">{inbox}</span> reyjhonbaquirin@yahoo.com
           </p>
           <div className="mt-5 flex gap-4 items-center">
             <div className={"text-gray-500 w-8 h-8"}>
@@ -59,7 +59,7 @@ const About = () => {
                 {github}
               </a>
             </div>
-            <div className={"text-gray-500 w-8 h-8"}>
+            {/* <div className={"text-gray-500 w-8 h-8"}>
               <a
                 style={{color:'#d790f5'}}
                 href={"https://www.linkedin.com/in/rj-baquirin-810402182/"}
@@ -68,7 +68,7 @@ const About = () => {
               >
                 {linkedin}
               </a>
-            </div>
+            </div> */}
           </div>
           <p className="pt-5">And oh! I love linux. 🙃</p>
         </div>
