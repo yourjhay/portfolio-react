@@ -22,28 +22,35 @@ const About = () => {
             RJ
           </p>
           <span className="yellow">Software Architect</span>
-          <p className="mt-3 mb-2">@skills:</p>
+          <p className="mt-3 mb-2">@technical_skills:</p>
+          
+          <p className="text-gray-400 mt-2 mb-1 text-sm uppercase tracking-wide">Frontend & Mobile</p>
           <p className="blue flex items-center"> {chevronRight} React.js</p>
           <p className="text-blue-500 flex items-center">
-            {chevronRight} iOS & Android Development
+            {chevronRight} React Native (iOS & Android)
           </p>
+          <p className="text-green-300 flex items-center">
+            {chevronRight} JavaScript / TypeScript
+          </p>
+          
+          <p className="text-gray-400 mt-3 mb-1 text-sm uppercase tracking-wide">Backend</p>
           <p className="text-red-500 flex items-center">
             {chevronRight} Laravel
           </p>
           <p className="text-blue-300 flex items-center">
             {chevronRight} Drupal
           </p>
-          <p className="text-red-400 flex items-center"> {chevronRight} Git</p>
           <p className="text-blue-400 flex items-center">
-            {chevronRight} Php OOP
-          </p>
-          <p className="text-green-300 flex items-center">
-            {chevronRight} JavaScript / Typescript
+            {chevronRight} PHP (OOP)
           </p>
           <p className="yellow flex items-center">
-            {chevronRight} API Design & Development
+            {chevronRight} REST API Design & Development
           </p>
+          
+          <p className="text-gray-400 mt-3 mb-1 text-sm uppercase tracking-wide">DevOps & Tooling</p>
+          <p className="text-red-400 flex items-center"> {chevronRight} Git</p>
           <p className="text-green-500 flex items-center">{chevronRight} Docker</p>
+          <p className="text-purple-400 flex items-center">{chevronRight} CI/CD Workflows</p>
           <p className="mt-5 mb-2">@contact:</p>
           <p className="text-blue-300 flex items-center">
             <span className="mr-2">{inbox}</span> inquire@rjhon.net
