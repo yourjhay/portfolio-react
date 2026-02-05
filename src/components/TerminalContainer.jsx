@@ -18,7 +18,7 @@ const TerminalContainer = ({ children, title, display }) => {
             </div>
           </div>
 
-          <div className="terminal-content-container">
+          <div className="terminal-content-container max-h-[500px] overflow-y-auto">
             <div className="terminal-content-text">{children}</div>
           </div>
 

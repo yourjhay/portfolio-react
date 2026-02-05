@@ -73,6 +73,30 @@ html, body, #root {
     padding: 30px;
     min-height: 80vh;
     border-radius: var(--roundness) var(--roundness) 0px 0px;
+
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(198, 141, 255, 0.5) rgba(25, 26, 34, 0.3);
+}
+
+/* Webkit scrollbar (Chrome, Safari, Edge) */
+.terminal-content-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-content-container::-webkit-scrollbar-track {
+    background: rgba(25, 26, 34, 0.3);
+    border-radius: 4px;
+}
+
+.terminal-content-container::-webkit-scrollbar-thumb {
+    background: rgba(198, 141, 255, 0.5);
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.terminal-content-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(198, 141, 255, 0.8);
 }
 
 .terminal-title-bar {

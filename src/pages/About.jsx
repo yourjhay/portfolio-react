@@ -77,29 +77,21 @@ const About = () => {
               </a>
             </div> */}
           </div>
-          <p className="pt-5">And oh! I love linux. 🙃</p>
+          <p className="pt-5">And oh! I love linux.</p>
         </div>
-        <div className="hidden lg:block lg:w-1/2 text-sm">
-          <span className="whitespace-pre-wrap flex flex-col mt-10">                                                                                                                                                 
-         <span>%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,</span>         
-          <span>%@                                                        /@,</span>      
-          <span>#@.                                                       /@.</span>         
-          <span>#@.                                                       /@.</span>     
-          <span>%@                              @@                        /@,</span>       
-          <span>%@                     @@     .@@   @@                    /@, </span>        
-          <span>#@.             .&@@@@&       #@,     &@@@@&              /@.</span>         
-          <span>#@.         @@@@%             @&            %@@@@         /@.</span>         
-          <span>%@           #@@@@&..        @@          .&@@@@#          /@,</span>         
-          <span>%@                 &@@@@&   @@.     &@@@@%                /@, </span>        
-          <span>%@                         ,@%                            /@,</span>         
-          <span>#@.                        @@                             /@. </span>        
-          <span>#@.                                                       /@.</span>         
-          <span>%@                                                        /@, </span>        
-          <span>%@                                                        /@,</span>         
-          <span>,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ </span>         
-          <span>                         #@,     (@*                                  </span>
-          <span>                         (@,     (@,                                  </span>
-          <span>                @@@@@@@@@@@@@@@@@@@@@@@@@@@@&                         </span>                                                        
+        <div className="hidden lg:block lg:w-1/2 text-2xl">
+          <span className="whitespace-pre-wrap flex flex-col mt-10">
+            <span>         .--.</span>
+            <span>        |o_o |</span>
+            <span>        |:_/ |</span>
+            <span>       //   \ \</span>
+            <span>      (|     | )</span>
+            <span>     /'\_   _/`\</span>
+            <span>     \___)=(___/</span>
+            <span></span>
+            <span>   +-----------------+</span>
+            <span>   |  Linux Powered  |</span>
+            <span>   +-----------------+</span>
           </span>
         </div>
       </div>
